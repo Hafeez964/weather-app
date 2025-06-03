@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-const baseURL = process.env.NODE_ENV === 'production'
-  ? 'https://weather-app-backend-vercel.vercel.app/api'
+const baseURL = import.meta.env.PROD
+  ? 'https://weather-app-xe9a.vercel.app/api'
   : 'http://localhost:5000/api';
 
 const axiosInstance = axios.create({
