@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const baseURL = import.meta.env.PROD
-  ? 'https://weather-app-xe9a.vercel.app/api'
+  ? 'https://your-backend-name.vercel.app/api'  // Replace this with your actual backend URL after deployment
   : 'http://localhost:5000/api';
 
 const axiosInstance = axios.create({
